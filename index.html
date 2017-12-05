@@ -1,73 +1,185 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-<!--
-        <img id="header" src="Resources/Images/icon_grass.png"
-             alt="Great Atlantic Landscpaing Logo"
-             title="Great Atlantic Logo"
-             height="40"
-             width="40" >
--->
-        <title>Past Projects</title>
-        <link href="Resources/CSS/index.css" type="text/css" rel="stylesheet">
-        <link rel="icon" href="Resources/Images/icon_tree.png">
-    </head>
-    
-    <body>
-        
-        <header class="header">
-            <img id="header" src="Resources/Images/icon_grass.png"
-             alt="Great Atlantic Landscpaing Logo"
-             title="Great Atlantic Logo"
-             height="100"
-             width="100" >
-            <h1>Great Atlantic Landscaping</h1>
-        </header>
-        
-        <div class="col1">
-            <h3>Navigation</h3>
-            <nav id="navbar">
-                <br /> 
-                <a class="button darkgreen" id ="home" href="index.html">Home</a> <br />
-                <br />
-                <a class="button green" id="about" href="AboutUs/index.html">About Us</a> <br />
-                <br />
-                <a class="button green" id="services" href="Services/index.html">Services</a> <br />
-                <br />
-                <a class="button green" id="reviews" href="Reviews/index.html">Reviews</a> <br />
-                <br />
-                <a class="button green" id="contact" href="ContactUs/index.html">Contact Us</a> <br />
-            </nav>
-        </div>
-        
-        <div class="col2">
-            <h2>Past Projects</h2>
-            <p>Below you will find some examples of previous projects completed by the Great Atlantic team. Please do not hesitate to let us know if you have any questions.</p>
-            <img src="Resources/Images/XCJS0930.jpg"
-                 alt="Circular Patio Project"
-                 title="Circular Patio"
-                 width="560"
-                 height="315" />
-            <figcaption class="describe">A patio completed using circular pavers.</figcaption>
-            <br />
-            <br />
-            <img class="drain"
-                 src="Resources/Images/thumb_IMG_2439_1024.jpg"
-                 alt="Gravel Drainage System 1"
-                 title="Gravel Drain Property"
-                 width="512"
-                 height="384" />
-            <br />
-            <img class="drain"
-                 src="Resources/Images/thumb_IMG_2452_1024.jpg"
-                 alt="Gravel Drainage System 2"
-                 title="Gravel Drain Road"
-                 width="512"
-                 height="384" />
-            <figcaption class="describe">Big draining project using large gravel rocks to allow proper irrigation and drainage,<br />while still serving to control/combat erosion.</figcaption>
-        </div>
-        
-    </body>
 
+<html>
+<head>
+    <title>Great Atlantic Landscaping</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="styles.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/no_background.png" id="headlogo" alt="GA Logo">
+    <h1>Great Atlantic Landscaping</h1>
+    </header>
+    
+<!-- <nav id="header" class="navbar navbar-default">
+  	<div class="container-fluid">
+
+	    <div class="row">
+	       
+      </div>
+          <div class="container-fluid">
+          <div class="row">
+            
+	        <div class="col-xs-3 col-sm-1 col-lg-2 col2">
+	            <h4><a href="gibberish.html">About Us</a></h4>
+	        </div>
+            
+	        <div class="col-xs-3 col-sm-1 col-lg-2 col2">
+	            <h4><a href="gibberish2.html">Services</a></h4>
+	        </div>
+            
+            <div class="col-xs-3 col-sm-1 col-lg-2 col2">
+	            <h4><a href="gibberish.html">Reviews</a></h4>
+	        </div>
+            
+            <div class="col-xs-3 col-sm-1 col-lg-2 col2">
+	            <h4><a href="gibberish.html">Portfolio</a></h4>
+	        </div>
+            
+            <div class="col-xs-3 col-sm-1 col-lg-2 col2">
+	            <h4><a href="gibberish.html">FAQ</a></h4>
+            </div>
+            
+            <div class="col-xs-3 col-sm-1 col-lg-2 col2">
+                <h4><a href="gibberish.html">Contact Us</a></h4>
+	        </div>
+              
+              </div>
+              
+          </div>
+          </div>
+
+	</div>  end container-fluid 
+</nav>-->
+    <nav id="header">
+
+<!--        Original Green Buttons-->
+<!--
+        <a class="button green" id="about" 
+           href="AboutUs.html">About Us</a>
+        <a class="button green" id="services"
+           href="Services">Services</a>
+        <a class="button green" id="reviews"
+           href="Reviews.html">Reviews</a>
+        <a class="button green" id="portfolio"
+           href="Portfolio.html">Portfolio</a>
+        <a class="button green" id="FAQ"
+           href="FAQ.html">FAQs</a>
+        <a class="button green" id="contact"
+           href="ContactUs/index.html">Contact Us</a>
+-->
+        
+<!--        table button hack-->
+        <table class=buttons>
+            <tr>
+<!--                <td><a type="button" class="button green" id="about" href="AboutUs.html">About Us</a></td>-->
+                <td>
+                    <button type="button" class="button black">About Us</button>
+                </td>
+                <td>
+                    <button type="button" class="button black">Services</button>
+                </td>
+                <td>
+                    <button type="button" class="button black">Reviews</button>
+                </td>
+                <td>
+                    <button type="button" class="button black">Portfolio</button>
+                </td>
+                <td>
+                    <button type="button" class="button black">FAQs</button>
+                </td>
+                <td>
+                    <button type="button" class="button black">Contact</button>
+                </td>
+            </tr>
+        </table>
+    </nav>
+    
+    
+<!--    filler space where page content will go -->
+    <div id="filler">
+        <p>filler text</p>
+    </div>
+    
+    <footer>
+        <img src="images/Great%20Atlantic%20Logo%20Final.png" id="footlogo" alt="GA Logo">
+        <nav id="footer">
+<!--
+            <br /> 
+            <a class="button green" id="about" 
+               href="AboutUs.html">About Us</a> <br />
+            <br />
+            <a class="button green" id="services"
+               href="Services">Services</a> <br />
+            <br />
+            <a class="button green" id="reviews"
+               href="Reviews.html">Reviews</a> <br />
+            <br />
+            <a class="button green" id="portfolio"
+               href="Portfolio.html">Portfolio</a> <br />
+            <br />
+            <a class="button green" id="FAQ"
+               href="FAQ.html">FAQs</a> <br />
+            <br />
+            <a class="button green" id="contact"
+               href="ContactUs/index.html">Contact Us</a> <br />
+            
+-->
+            <table class=buttons>
+                <tr>
+                    <td>
+                        <button type="button" class="button black">About Us</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="button black">Services</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="button black">Reviews</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="button black">Portfolio</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="button black">FAQs</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="button black">Contact</button>
+                    </td>
+                </tr>
+            </table>
+            </nav>
+        <div class="infoL">
+            <h2>Great Atlantic Landscaping</h2>
+            <h3>XXXX Address</h3>
+            <h3>Greensboro, NC 27408</h3>
+        </div>
+        <div class="infoR">
+            <a href="tel:xxx-xxx-xxxx" id="number">(336) 209-3607</a>
+            <h2>"SLOGAN"</h2>
+        </div>
+    </footer>
+
+
+</body>
 </html>
