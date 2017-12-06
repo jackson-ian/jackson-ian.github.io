@@ -76,7 +76,9 @@
             <div id="contactIntro" class="center">
                 <h3>Thank you for your interest in Great Atlantic!</h3>
                 <p>Please do not hesitate to get in touch with us to find out more about our lawn &amp; landscaping services. For answers to general questions, simply email us at <a href="mailto:greatscapes@yahoo.com" class="contactLink">greatscapes@yahoo.com</a>. If you would like to schedule an appointment for a free consultation and/or estimate on your next landscaping project, you can call us directly at <a href="tel:xxx-xxx-xxxx" class="contactLink">(336) 209-3607</a>.</p>
-                <p>Would you prefer for Great Atlantic to contact you?  You may fill out the form below, and we will reach out to you within 3 business days. Please be sure to include any relevant information (nature of your inquiry, best time/method to contact you, etc.) in the comments box so we can get back to you in the manner most convenient to you.</p>
+                
+<!--                make this part its own div, that nests under the above text in col1, but that clears to the middle when the browser is set to be very skinny. width 100% with a max-width should do it-->
+                <p>Would you prefer to have Great Atlantic to contact you?  You may fill out the form below, and we will reach out to you within 3 business days. Please be sure to include any relevant information (nature of your inquiry, best time/method to contact you, etc.) in the comments box so we can get back to you in the manner most convenient to you.</p>
             </div>
 <!--    Initial Form    -->
 <!--
@@ -133,17 +135,18 @@
 -->
         </div>
         <div id="contactCol2" class="center">
-            <h4 id="contactCol2Title">Quick Contact Info</h4>
-            <div id="quickContactLink">
+            <div id="quickContact" class="center">
+                <h4 id="quickContactTitle">Quick Contact Info</h4>
+                <div id="quickContactLink">
 <!--                <h5>Phone:</h5>-->
-                <a href="tel:xxx-xxx-xxxx" class="quickContactLink">(336) 209-3607</a>
-                <a href="mailto:greatscapes@yahoo.com" id="tablePhone" class="quickContactLink">greatscapes@yahoo.com</a>
-            </div>
-            <div id="contactAddress">
-                <h5>Mailing Address:</h5>
-                <p>101 Bethel Spring Dale</p>
-                <p>Greensboro, NC 27410</p>
-            </div>
+                    <a href="tel:xxx-xxx-xxxx" class="quickContactLink">(336) 209-3607</a>
+                    <a href="mailto:greatscapes@yahoo.com" id="tablePhone" class="quickContactLink">greatscapes@yahoo.com</a>
+                </div>
+                <div id="contactAddress">
+                    <h5>Mailing Address:</h5>
+                    <p>101 Bethel Spring Dale</p>
+                    <p>Greensboro, NC 27410</p>
+                </div>
             
 <!-- phone/email table -->
 <!--
@@ -166,11 +169,23 @@
                 </tr>
             </table>
 -->
-            
-            <div id="contactFB">
-                <a href="https://www.facebook.com/GreatAtlanticLandscaping/"><img alt="JoinOnFB" src="https://highdesertvapes.com/templates/NavyStore/images/JoinUsOnFacebook.png" width="90%" height="30%"></a>
+                
+                <div id="contactFB">
+                    <a href="https://www.facebook.com/GreatAtlanticLandscaping/">
+                        <img alt="JoinOnFB" src="https://highdesertvapes.com/templates/NavyStore/images/JoinUsOnFacebook.png" width="90%" height="30%">
+                    </a>
+                </div>
             </div>
+            
+            <div id="contactPicture" class="center">
+                <img src="images/family_cropped.png" id="familyTree" class="img-responsive" title="familyTree" alt="BertrandFamily" width="629px" height="888px">
+            </div>
+<!--  
+width=95% 
+height=134%
+-->
         </div>
+
     </div>
     
         

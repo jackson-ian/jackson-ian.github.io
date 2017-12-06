@@ -5,6 +5,7 @@ body {
 
 header {
     background-color: #A5D6A7;
+    height: 20%;
 }
 
 header img {
@@ -13,6 +14,8 @@ header img {
     display: inline;
     margin: 5% 2%;
 }
+
+
 
 /*.container-fluid{*/
 /*
@@ -43,8 +46,10 @@ h3 {
     font-size: 150%;
 }
 
+@import url(https://www.fontsquirrel.com/fonts/Bebas);
 .companyName {
     text-transform: uppercase;
+    font: Bebas;
 /*
     color: darkgreen;
     text-outline: 0.5em black solid;
@@ -67,6 +72,7 @@ nav#header {
 
 footer {
     background-color: #A5D6A7; /*original color #66BB6A*/
+    clear: both;
     border-top: 2px black solid;
 }
 
@@ -379,13 +385,15 @@ a.serviceLink {
 .contactContent {
     padding: 3%;
     padding-bottom: 10%;
-    height: 1400px;
+/*  why does the height not respond to percentages? cant make it 100%  */
+    height: 100%;
+/*    min-height: 100em;*/
 /*    border: solid 1px black;*/
 }
 
 #contactCol1 {
-    width: 60%;
-    height: 105%;
+    width: 57%;
+    height: 100%;
     padding: 2% 4%;
     float: right;
     border: solid 1px black;
@@ -468,12 +476,22 @@ COMMENTED OUT
 }
 
 #contactCol2 {
-    width: 35%;
-    margin-top: 5%;
+    width: 40%;
+    height: 100%;
     padding: 2%;
 /*    padding-top: 3%;*/
-    height: 48%;
     float: left;
+    border: 1px solid black;
+}
+    
+    
+#quickContact {
+    margin-top: 5%;
+    padding: 4%;
+    padding-bottom: 15%;
+    width: 95%;
+    height: 100%;
+/*    min-height: 25em;*/
     font-size: 1.4em;
     background-color: #C8E6C9;
     border: 2px solid darkgreen;
@@ -481,8 +499,8 @@ COMMENTED OUT
 }
 
 
-#contactCol2Title {
-    padding-bottom: 2%;
+#quickContactTitle {
+    padding-bottom: 5%;
     font-weight: 600;
     font-size: 1.55em;
 /*    text-transform: uppercase;*/
@@ -533,16 +551,32 @@ table#contactTable {
 */
 
 div#contactFB {
-    padding: 11% 2%;
+    padding: 10% 2%;
     margin: auto;
-/*    border: 1px solid black;*/
-}
-
-div#contactFB {
     width: 100%;
     max-width: 250px;
     max-height: 75px;
+/*    border: 1px solid black;*/
 }
+
+div#contactPicture {
+    position: relative;
+    width: 95%;
+    height: 40%;
+    margin-top: 15%;
+    padding-top: 15%;
+    border: 1px solid black;
+}
+
+img#familyTree {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+}
+
 
 /*      CONTACT FORM        */
 
