@@ -670,6 +670,7 @@ div#contactPicture {
     height: 40%;
     margin-top: 15%;
     padding-top: 15%;
+    clear: both;
 /*    border: 1px solid black;*/
 }
 
@@ -679,6 +680,7 @@ img#familyTree {
     height: auto;
     display: block;
     margin: auto;
+    clear: both;
     vertical-align: middle;
 }
 
