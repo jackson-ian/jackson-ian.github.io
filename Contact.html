@@ -74,10 +74,12 @@
 <!--        <h3 id= "contactTitle" class="center">Contact Great Atlantic</h3>-->
         <div id=contactCol1>
             <div id="contactIntro" class="center">
-                <p>Thank you for your interest in Great Atlantic!</p>
+                <h3>Thank you for your interest in Great Atlantic!</h3>
                 <p>Please do not hesitate to get in touch with us to find out more about our lawn &amp; landscaping services. For answers to general questions, simply email us at <a href="mailto:greatscapes@yahoo.com" class="contactLink">greatscapes@yahoo.com</a>. If you would like to schedule an appointment for a free consultation and/or estimate on your next landscaping project, you can call us directly at <a href="tel:xxx-xxx-xxxx" class="contactLink">(336) 209-3607</a>.</p>
-                <p>Would you prefer for Great Atlantic to contact you?  Please fill out the form below and include any relevant information (nature of your inquiry, best time/method to contact you, etc.) in the comments box so we can get back to you at your earliest convenience.</p>
+                <p>Would you prefer for Great Atlantic to contact you?  You may fill out the form below, and we will reach out to you within 3 business days. Please be sure to include any relevant information (nature of your inquiry, best time/method to contact you, etc.) in the comments box so we can get back to you in the manner most convenient to you.</p>
             </div>
+<!--    Initial Form    -->
+<!--
             <div id="form">
                 <fieldset id="contact">
                     <legend>
@@ -86,9 +88,9 @@
                     <form action="URL" method="post">
                         <label for="name" class="formLabel">Name: <input type="text" id="name" name="name" /></label>
                         <br />
-                        <label for="name" class="formLabel">Email: <input type="text" id="email" name="email" /></label>
+                        <label for="email" class="formLabel">Email: <input type="text" id="email" name="email" /></label>
                         <br />
-                        <label for="name" class="formLabel">Phone: <input type="number" id="email" name="phone" /></label>
+                        <label for="phone" class="formLabel">Phone: <input type="tel" id="phone" name="phone" /></label>
                     </form>
                     <textarea name="comments" cols="70" rows="8">
                     </textarea>
@@ -97,6 +99,30 @@
                         <input type="reset" value="Clear Form">
                     </form>
                 </fieldset>
+            </div>
+-->
+            
+<!--    CONTACT FORM    -->
+            <div class="container">
+                <form id="contactForm" action="" method="post">
+                    <h3>Contact Details</h3>
+<!--                    <h4>Contact us for custom quote</h4>-->
+                    <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea name="comments" cols="70" rows="8" placeholder="Type your message here...." tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+                    </fieldset>
+                </form>
             </div>
             <p id="formBottom">Thank you for your email. Someone will reach out to you as soon as possible to discuss your requested service and set up a free consultation.</p>
 <!--
@@ -108,18 +134,15 @@
         </div>
         <div id="contactCol2" class="center">
             <h4 id="contactCol2Title">Quick Contact Info</h4>
-            <div id="contactAddress">
-                <h5>Mailing Address:</h5>
-                <p>101 Bethel Spring Dale</p>
-                <p>Greensboro, NC 27410</p>
-            </div>
             <div id="quickContactLink">
 <!--                <h5>Phone:</h5>-->
                 <a href="tel:xxx-xxx-xxxx" class="quickContactLink">(336) 209-3607</a>
                 <a href="mailto:greatscapes@yahoo.com" id="tablePhone" class="quickContactLink">greatscapes@yahoo.com</a>
             </div>
-            <div id="contactEmail">
-                
+            <div id="contactAddress">
+                <h5>Mailing Address:</h5>
+                <p>101 Bethel Spring Dale</p>
+                <p>Greensboro, NC 27410</p>
             </div>
             
 <!-- phone/email table -->
