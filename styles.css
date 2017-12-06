@@ -1,5 +1,6 @@
 body {
     background-color: #f0fff0;
+    background: #f0fff0;
 }
 
 header {
@@ -13,21 +14,42 @@ header img {
     margin: 5% 2%;
 }
 
-.container-fluid{
+/*.container-fluid{*/
+/*
     width: 100%;
     border-radius: 0px;
     color: #f0fff0;
-}
+*/
+/*}*/
 
 h1{
-    font-size: 400%;
-    font-variant: small-caps;
+    font-size: 550%;
+/*    font-variant: small-caps;*/
 /*    font:serif;*/
+    font-weight: 700;
+/*    font-stretch:ultra-expanded;*/
     text-align: center;
     vertical-align: middle;
     display: inline-block;
     padding-left: 3%;
 /*    color: darkgreen;*/
+}
+
+h2 {
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+.companyName {
+    text-transform: uppercase;
+/*
+    color: darkgreen;
+    text-outline: 0.5em black solid;
+    text-shadow: 0.5em black solid;
+*/
 }
 
 nav#header {
@@ -39,54 +61,26 @@ nav#header {
     
 }
 
-/*
-a{
-    color: green;
-    background: #f0fff0;
-}
-*/
-div.row{
-    background: #f0fff0;
-    text-align: center;
-    padding: 2px 0px 2px 0px;
-    
-}
-div.col-lg-2  {
-    border: solid black 1px;
 
-}
-body{
-    background: #f0fff0;
-}
+
+/*      FOOTER STYLING      */
 
 footer {
     background-color: #A5D6A7; /*original color #66BB6A*/
-}
-
-footer a {
-    background-color: #A5D6A7;
-    font-size: 1.5em;
+    border-top: 2px black solid;
 }
 
 footer img {
     width: 250px;
     height: 250px;
     display: inline;
-    padding: 40px;
+/*    padding: 40px;*/
+    margin: 3%;
+    border: solid black 2px;
+/*    put a black border around the image to make it match*/
 }
 
-footer div {
-    font-variant: small-caps;
-/*    font:serif;*/
-    text-align: center;
-    display: inline-block;
-/*    padding-left: 20%;*/
-    position: relative;
-    left: 7%;
-    vertical-align: middle;
-}
-
-nav#footer {
+nav#footnav {
     display: inline-block;
     width: 100px;
 /*    make the width a fixed amount     <----- */
@@ -96,17 +90,75 @@ nav#footer {
 /*    border just to show where the navbar div is */
 }
 
+footer div {
+/*    font:serif;*/
+    text-align: center;
+/*    font-variant: small-caps;*/
+    display: inline-block;
+/*    padding-left: 20%;*/
+    position: relative;
+    left: 4%;
+    width: 50%;
+    height: 50%;
+    vertical-align: middle;
+/*    border: 1px black solid;*/
+}
+
+#footerName {
+    font-size: 2.7em;
+}
+
+.infoL {
+    font-variant: small-caps;
+    float: left;
+    width: 45%;
+    height: 65px;
+    vertical-align: middle;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
 .infoR {
-    margin-left: 150px;
+/*    margin-left: 10px;*/
+    font-style: normal;
+    display: block;
+    float: right;
+    width: 45%;
+    height: 65px;
+    font-size: 1.4em;
 }
 
-/*filler text where page content will go*/
-div#filler {
-    padding: 20%;
-    height: 1000px;
-    border: solid 1px black;
+.footLink {
+    color: royalblue;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
+a#footnumber {
+    background-color: #A5D6A7;
+    color: royalblue;
+    font-size: 1.2em;
+/*    text-decoration: underline;*/
+    font-weight: 600;
+/*    font-family: Titillium Web, Open Sans, Lato, Varela Round Montserrat; mont is best*/
+/*    font-family: Baskerville, Baskervald ADF Std;*/
+}
+
+#footEmail {
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+#footerSlogan {
+    clear: both;
+    padding-top: 4%;
+    font-variant: small-caps;
+}
+
+
+
+/*      BUTTONS     */
 
 .button {
 /*
@@ -114,14 +166,14 @@ div#filler {
 	zoom: 1;  zoom and *display = ie7 hack for display:inline-block 
 */
     display: inline;
-/*    width: 100%;   didnt work*/
+    width: 100%;
 	vertical-align: baseline;
 	margin: 0 2px;
 	outline: none;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
-	font: 14px Arial, Helvetica, sans-serif;
+	font: 18px Arial, Helvetica, sans-serif;
 /*	padding: .5em 2em .55em;*/
     padding-left: auto;
     padding-right: auto;
@@ -150,22 +202,8 @@ table.buttons {
   width: 100%;
 }
 
-/*green button*/
-.green {
-/*    width: 100%;    didnt work*/
-	color: #e8f0de;
-	border: solid 1px #538312;
-	background: #64991e;
-	background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
-}
-.green:hover {
-    color: #c8ccc5;
-	background: #538018;
-	background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
-}
-.green:active {
-	color: #a9c08c;
-	background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
+a.navbutton {
+    color: #d7d7d7;
 }
 
 /* black */
@@ -188,4 +226,137 @@ table.buttons {
 	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
 	background: -moz-linear-gradient(top,  #000,  #444);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+}
+
+
+
+
+
+/*  SERVICES PAGE STYLING  */
+
+.servicesContent {
+    padding: 2%;
+    padding-bottom: 10%;
+    height: 120%;
+    border: solid 1px black;
+}
+
+p#servicesIntro {
+    font-size: 1.7em;
+    padding: 5% 20% 5% 20%;
+    text-align: center;
+}
+
+#servicesTable {
+    text-align: center;
+    font-variant: small-caps;
+    border-spacing: 8px;
+/*    display:inline-table;*/
+/*    margin: 5% 20% 5% 20%;*/
+    margin-top: 5%;
+    margin-bottom: 8%;
+    align-content: center;
+/*
+    margin-left: 100px auto;    neither of these work
+    margin-right: auto 20%;     cannot figure out how to center table
+*/
+    padding-left: 17%;
+    padding-right: 15%;
+}
+
+.centerTable { 
+    display: inline-block;
+    margin: auto;
+    align-content: center;
+}
+
+#servicesTable th {
+/*    font-variant: small-caps;*/
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: darkgreen;
+    border-bottom: 1.5px solid;
+    padding: 10px 20px 5px 20px;
+    text-align: center
+}
+
+tr.first>td {
+    padding-top: 15px;
+/*    margin-top: 700px;*/
+}
+
+/*
+tr {
+    padding-bottom: 10px;
+}
+*/
+
+#servicesTable td {
+    font-size: 1.5em;
+}
+
+.center {
+    margin: auto;
+    display: block;
+/*    width: 50%;*/
+    text-align: center;
+}
+
+#prices {
+    width: 60%;
+    margin: auto;
+    background-color: #C8E6C9;
+    border: 2px solid darkgreen;
+    padding: 1%;
+    font-size: 1.25em;
+}
+
+#priceTitle {
+    padding-bottom: 2%;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: darkgreen;
+}
+
+p#serviceBottom {
+    padding: 7% 12% 0% 12%;
+    font-size: 1.4em;
+}
+
+h3#serviceContact{
+    font-size: 1.5em;
+}
+
+a.serviceLink {
+    color: royalblue;
+    font-size: 1.1em;
+    text-decoration: underline;
+    font-weight: 600;
+/*    font-family: Titillium Web, Open Sans, Lato, Varela Round Montserrat; mont is best*/
+/*    font-family: Baskerville, Baskervald ADF Std;*/
+}
+
+
+
+/*  CONTACT PAGE STYLING  */
+.contactContent {
+    padding: 3%;
+    padding-bottom: 10%;
+    height: 120%;
+/*    border: solid 1px black;*/
+}
+
+#contactCol1 {
+    width: 60%;
+    height: 100%;
+    float: left;
+    border: solid 1px black;
+}
+
+#contactCol2 {
+    width: 35%;
+    height: 100%;
+    float: right;
+    border: solid 1px black;
 }
