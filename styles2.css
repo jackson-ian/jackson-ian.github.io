@@ -16,6 +16,15 @@ header img {
 }
 
 
+
+/*.container-fluid{*/
+/*
+    width: 100%;
+    border-radius: 0px;
+    color: #f0fff0;
+*/
+/*}*/
+
 h1{
     font-size: 550%;
 /*    font-variant: small-caps;*/
@@ -59,7 +68,7 @@ nav#header {
 
 
 
-/*    >>>>>>>>>>  FOOTER STYLING   <<<<<<<<<<   */
+/*      FOOTER STYLING      */
 
 footer {
     background-color: #A5D6A7; /*original color #66BB6A*/
@@ -155,7 +164,7 @@ a#footnumber {
 
 
 
-/*   >>>>>>>>   BUTTONS   <<<<<<<<  */
+/*      BUTTONS     */
 
 .button {
 /*
@@ -262,43 +271,10 @@ table.buttons a {
 }
 
 
-/*  >>>>>>>>    AboutUs/index.HTML  <<<<<<  */
-div#fillerab {
-    padding: 2%;
-    padding-top: 4%;
-    text-align: center;
-    height: 725px;
-    border: solid 1px black;
-    
-
-}	
-
-h3#titleab{
-    font-variant: small-caps;
-    padding-left: 1.6%;
-    padding-bottom: 0%;
-    font-size: 2em;
-}
-p#introab{
-    padding-top: 1%;
-    text-align: justify;
-    padding-right: 2%;
-    font-size: 1.25em;
-    
-}
-
-img#ceo1ab{
-    float: left;
-    display: inline-block;
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-left: 2%; 
-}
 
 
 
-
-/* >>>>>>>>>>>  SERVICES PAGE STYLING <<<<<<<<<< */
+/*  SERVICES PAGE STYLING  */
 
 .servicesContent {
     padding: 2%;
@@ -309,7 +285,7 @@ img#ceo1ab{
 
 p#servicesIntro {
     font-size: 1.7em;
-    padding: 3% 20% 5% 20%;
+    padding: 5% 20% 5% 20%;
     text-align: center;
 }
 
@@ -405,88 +381,7 @@ a.serviceLink {
 
 
 
-
-/*      >>>>>>>>>>  PORTFOLIO.HTML    <<<<<<<<<<    */
-
-div#fillerpo {
-    padding-top: 0%;
-    text-align: center;
-    height: 100%;
-    border: solid 1px black;
-    
-
-}	
-
-img#golfpo {
-    margin: 2%;
-    width: 75%;
-    border: solid 5px black;
-}
-
-img#backpo {
-    margin: 2%;
-    margin-top: 0%;
-    width: 75%;
-    border: solid 5px black;
-}
-
-/*overlayed text on header golf course image*/
-.containerpicpo {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.centeredtextpo {
-    position: absolute;
-    top: 84%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: .;
-    font-size: 2.85em;
-    font-family:  cursive;
-}
-
-.nextlinepo{
-    position: absolute;
-    top: 84%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: .8;
-    font-size: 20px;
-    font-family:  cursive;
-}
-
-/*overlayed text on header backyard image*/
-.containerbackpo {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.centeredbacktextpo {
-    position: absolute;
-    top: 84%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: .;
-    font-size: 2em;
-    font-family:  cursive;
-}
-
-.nextlinebacktextpo {
-    position: absolute;
-    top: 84%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: .8;
-    font-size: 20px;
-    font-family:  cursive;
-}
-
-
-
-
-/*   >>>>>>>>>>>     CONTACT PAGE STYLING    <<<<<<<<<   */
-
+/*  CONTACT PAGE STYLING  */
 .contactContent {
     padding: 3%;
     padding-bottom: 10%;
@@ -501,7 +396,7 @@ img#backpo {
     height: 100%;
     padding: 2% 4%;
     float: right;
-/*    border: solid 1px black;*/
+    border: solid 1px black;
 }
 
 #contactCol1 p {
@@ -586,7 +481,7 @@ COMMENTED OUT
     padding: 2%;
 /*    padding-top: 3%;*/
     float: left;
-/*    border: 1px solid black;*/
+    border: 1px solid black;
 }
     
     
@@ -670,7 +565,7 @@ div#contactPicture {
     height: 40%;
     margin-top: 15%;
     padding-top: 15%;
-/*    border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 img#familyTree {
@@ -830,10 +725,9 @@ fieldset {
 
 
 /*   INDEX FILLER   */
-/*
 #content {
     margin: 1%;
     padding: 2%;
     height: 500px;
     border: 1px solid black;
-}*/
+}
