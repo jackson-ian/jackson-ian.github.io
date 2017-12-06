@@ -20,7 +20,7 @@
     <body>
     
         <header class="header">
-            <img src="images/no_background.png" id="headlogo" alt="GA Logo">
+            <a href="index.html"><img src="images/no_background.png" id="headlogo" alt="GA Logo" width="359" height="120"></a>
             <h1 class="companyName">Great Atlantic <br /> Landscaping</h1>
         </header>
     
@@ -47,22 +47,22 @@
         <table class=buttons>
             <tr>
                 <td>
-                    <button type="button" class="button black"><a class=navbutton href="index.html">About Us</a></button>
+                    <a class=navbutton href="index.html"><button type="button" class="button black">About Us</button></a>
+                </td>
+                <td id="buttons">
+                    <a class=navbutton href="Services.html"><button type="button" class="button black">Services</button></a>
                 </td>
                 <td>
-                    <button type="button" class="button black"><a class=navbutton href="Services.html">Services</a></button>
+                    <a class=navbutton href="Reviews.html"><button type="button" class="button black">Reviews</button></a>
                 </td>
                 <td>
-                    <button type="button" class="button black"><a class=navbutton href="Reviews.html">Reviews</a></button>
+                    <a class=navbutton href="Portfolio.html"><button type="button" class="button black">Portfolio</button></a>
                 </td>
                 <td>
-                    <button type="button" class="button black"><a class=navbutton href="Portfolio.html">Portfolio</a></button>
+                    <a class=navbutton href="FAQs.html"><button type="button" class="button black">FAQs</button></a>
                 </td>
                 <td>
-                    <button type="button" class="button black"><a class=navbutton href="FAQs.html">FAQs</a></button>
-                </td>
-                <td>
-                    <button type="button" class="button black"><a class=navbutton href="Contact.html">Contact</a></button>
+                    <a class=navbutton href="Contact.html"><button type="button" class="button black">Contact</button></a>
                 </td>
             </tr>
         </table>
@@ -71,14 +71,82 @@
     
 <!--    PAGE CONTENT GOES HERE -->
     <div class="contactContent">
-        <h3 id= "contactTitle" class="center">Contact Great Atlantic</h3>
+<!--        <h3 id= "contactTitle" class="center">Contact Great Atlantic</h3>-->
         <div id=contactCol1>
             <div id="contactIntro" class="center">
-                <p>Get in touch to find out more about our lawn &amp; landscaping services, or to schedule an appointment for a free consultation and estimate on your next landscaping project.</p>
+                <p>Thank you for your interest in Great Atlantic!</p>
+                <p>Please do not hesitate to get in touch with us to find out more about our lawn &amp; landscaping services. For answers to general questions, simply email us at <a href="mailto:greatscapes@yahoo.com" class="contactLink">greatscapes@yahoo.com</a>. If you would like to schedule an appointment for a free consultation and/or estimate on your next landscaping project, you can call us directly at <a href="tel:xxx-xxx-xxxx" class="contactLink">(336) 209-3607</a>.</p>
+                <p>Would you prefer for Great Atlantic to contact you?  Please fill out the form below and include any relevant information (nature of your inquiry, best time/method to contact you, etc.) in the comments box so we can get back to you at your earliest convenience.</p>
             </div>
+            <div id="form">
+                <fieldset id="contact">
+                    <legend>
+                        <b>Contact Details</b>
+                    </legend>
+                    <form action="URL" method="post">
+                        <label for="name" class="formLabel">Name: <input type="text" id="name" name="name" /></label>
+                        <br />
+                        <label for="name" class="formLabel">Email: <input type="text" id="email" name="email" /></label>
+                        <br />
+                        <label for="name" class="formLabel">Phone: <input type="number" id="email" name="phone" /></label>
+                    </form>
+                    <textarea name="comments" cols="70" rows="8">
+                    </textarea>
+                    <form action="URL" method="post" id="buttons">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear Form">
+                    </form>
+                </fieldset>
+            </div>
+            <p id="formBottom">Thank you for your email. Someone will reach out to you as soon as possible to discuss your requested service and set up a free consultation.</p>
+<!--
+            <br />
+            <br />
+            <p>Owned and Operated by:</p>
+            <p>Patrick Bertrand <br /> 3318 Sandy Ridge Rd <br /> Greensboro, North Carolina</p>
+-->
         </div>
         <div id="contactCol2" class="center">
-            <p>Mailing Address:</p>
+            <h4 id="contactCol2Title">Quick Contact Info</h4>
+            <div id="contactAddress">
+                <h5>Mailing Address:</h5>
+                <p>101 Bethel Spring Dale</p>
+                <p>Greensboro, NC 27410</p>
+            </div>
+            <div id="quickContactLink">
+<!--                <h5>Phone:</h5>-->
+                <a href="tel:xxx-xxx-xxxx" class="quickContactLink">(336) 209-3607</a>
+                <a href="mailto:greatscapes@yahoo.com" id="tablePhone" class="quickContactLink">greatscapes@yahoo.com</a>
+            </div>
+            <div id="contactEmail">
+                
+            </div>
+            
+<!-- phone/email table -->
+<!--
+            <table id="contactTable" class="centerTable">
+                <tr>
+                    <td>
+                        <h5>Phone:</h5>
+                    </td>
+                    <td>
+                        <a href="tel:xxx-xxx-xxxx" id="tablePhone" class="tableLink">(336) 209-3607</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Email:</h5>
+                    </td>
+                    <td>
+                        <a href="mailto:greatscapes@yahoo.com" id="tablePhone" class="tableLink">greatscapes@yahoo.com</a>
+                    </td>
+                </tr>
+            </table>
+-->
+            
+            <div id="contactFB">
+                <a href="https://www.facebook.com/GreatAtlanticLandscaping/"><img alt="JoinOnFB" src="https://highdesertvapes.com/templates/NavyStore/images/JoinUsOnFacebook.png" width="90%" height="30%"></a>
+            </div>
         </div>
     </div>
     
@@ -94,32 +162,32 @@
             <table id="footer" class=buttons>
                 <tr>
                     <td>
-                        <button type="button" class="button black"><a class=navbutton href="index.html">About Us</a></button>
+                        <a class=navbutton href="index.html"><button type="button" class="button black">About Us</button></a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="button black"><a class=navbutton href="Services.html">Services</a></button>
+                        <a class=navbutton href="Services.html"><button type="button" class="button black">Services</button></a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="button black"><a class=navbutton href="Reviews.html">Reviews</a></button>
+                        <a class=navbutton href="Reviews.html"><button type="button" class="button black">Reviews</button></a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="button black"><a class=navbutton href="Portfolio.html">Portfolio</a></button>
+                        <a class=navbutton href="Portfolio.html"><button type="button" class="button black">Portfolio</button></a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="button black"><a class=navbutton href="FAQs.html">FAQs</a></button>
+                        <a class=navbutton href="FAQs.html"><button type="button" class="button black">FAQs</button></a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="button black"><a class=navbutton href="Contact.html">Contact</a></button>
+                        <a class=navbutton href="Contact.html"><button type="button" class="button black">Contact</button></a>
                     </td>
                 </tr>
             </table>
