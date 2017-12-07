@@ -5,6 +5,10 @@ body {
 
 header {
     background-color: #A5D6A7;
+/*      GRADIENT HEADER
+    background: -webkit-gradient(linear, left top, left bottom, from(#81C784), to(#A5D6A7));
+	background: -moz-linear-gradient(top,  #81C784,  #A5D6A7);
+*/
     height: 20%;
 }
 
@@ -39,7 +43,8 @@ h3 {
 
 @import url(https://www.fontsquirrel.com/fonts/Bebas);
 .companyName {
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
+    font-variant: small-caps;
     font: Bebas;
 /*
     color: darkgreen;
@@ -94,7 +99,7 @@ footer div {
     display: inline-block;
 /*    padding-left: 20%;*/
     position: relative;
-    left: 4%;
+    left: 3%;
     width: 50%;
     height: 50%;
     vertical-align: middle;
@@ -103,6 +108,7 @@ footer div {
 
 #footerName {
     font-size: 2.7em;
+    padding-left: 7%;
 }
 
 .infoL {
@@ -113,7 +119,7 @@ footer div {
     vertical-align: middle;
     font-size: 1.4em;
     font-weight: 500;
-    line-height: 1.3em;
+    line-height: 1.5em;
 }
 
 .infoR {
@@ -150,7 +156,10 @@ a#footnumber {
 #footerSlogan {
     clear: both;
     padding-top: 4%;
-    font-variant: small-caps;
+    padding-left: 6%;
+/*    font-variant: small-caps;*/
+    font-family: Baskerville, Baskervald ADF Std;
+    font-style: italic;
 }
 
 
@@ -309,7 +318,7 @@ img#ceo1ab{
 
 p#servicesIntro {
     font-size: 1.7em;
-    padding: 3% 20% 5% 20%;
+    padding: 3% 20% 0% 20%;
     text-align: center;
 }
 
@@ -319,7 +328,7 @@ p#servicesIntro {
     border-spacing: 8px;
 /*    display:inline-table;*/
 /*    margin: 5% 20% 5% 20%;*/
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 8%;
     align-content: center;
 /*
@@ -375,6 +384,8 @@ tr {
     border: 2px solid darkgreen;
     padding: 1%;
     font-size: 1.25em;
+    border: 2px ridge darkgreen;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #priceTitle {
@@ -404,17 +415,13 @@ a.serviceLink {
 }
 
 
-
-
-/*      >>>>>>>>>>  PORTFOLIO.HTML    <<<<<<<<<<    */
+/*      >>>>>>>>>>      REVIEWS     <<<<<<<<<<      */
 
 div#fillerpo {
     padding-top: 0%;
     text-align: center;
     height: 100%;
     border: solid 1px black;
-    
-
 }	
 
 img#golfpo {
@@ -472,7 +479,7 @@ img#backpo {
     font-family:  cursive;
 }
 
-.nextlinebacktextpo {
+.nextlinebacktextpo{
     position: absolute;
     top: 84%;
     left: 50%;
@@ -480,6 +487,56 @@ img#backpo {
     opacity: .8;
     font-size: 20px;
     font-family:  cursive;
+}
+
+/* more testimonies*/
+div#moretestpo{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top:0%;
+}
+
+
+
+/*      >>>>>>>>>>      PORTFOLIO & FAQs        <<<<<<<<<<    */
+
+/*be sure to change the background-colors that are A5D6A7 to f0fff0 */
+.col-lg-12{
+    background-color: #f0fff0;
+    border: black 5px double;
+    text-align: center;
+}
+.col-lg-6{
+    border: dashed 2.5px black;
+    text-align: center;
+    background-color: #f0fff0;
+}
+.col-lg-2{
+    background-color: #f0fff0;
+    padding:0px;
+}
+
+.row{
+     background-color: purple;
+     border: none;
+}
+.container-fluid{
+         background-color: #f0fff0;
+         border: none;
+         color: black;
+}
+body{
+         background-color: #f0fff0;
+         
+
+}
+.row{
+    background: #f0fff0;
+/* WAS PURPLE, DOUBLE CHECK COMPLETED PRODUCT TO MAKE SURE*/
+    
+}
+.carousel-inner{
+    height: 1000px;
 }
 
 
@@ -598,9 +655,11 @@ COMMENTED OUT
     height: 100%;
 /*    min-height: 25em;*/
     font-size: 1.4em;
-    background-color: #C8E6C9;
-    border: 2px solid darkgreen;
     vertical-align: middle;
+    background-color: #C8E6C9;
+/*    border: 2px solid darkgreen;*/
+    border: 10px ridge darkgreen;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 
