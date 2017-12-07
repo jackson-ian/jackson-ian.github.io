@@ -418,7 +418,7 @@ a.serviceLink {
 /*      >>>>>>>>>>      REVIEWS     <<<<<<<<<<      */
 
 div#fillerpo {
-    padding-top: 0%;
+    padding: 4%;
     text-align: center;
     height: 100%;
     border: solid 1px black;
@@ -510,10 +510,17 @@ div#moretestpo{
     border: dashed 2.5px black;
     text-align: center;
     background-color: #f0fff0;
+    height: 100px;
+}
+.col-lg-8{
+    border: dashed 2.5px black;
+    text-align: center;
+    background-color: #f0fff0;
 }
 .col-lg-2{
     background-color: #f0fff0;
     padding:0px;
+    height: 100px;
 }
 
 .row{
